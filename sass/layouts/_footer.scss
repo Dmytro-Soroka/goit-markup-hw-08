@@ -1,0 +1,229 @@
+.footer {
+  color: $special-text-color;
+  background-color: #2f303a;
+}
+
+.footer-container {
+  @media screen and (max-width: 767px) {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 463px;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+    height: 252px;
+  }
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.footer-section:not(:last-child) {
+  margin-bottom: 60px;
+}
+
+.footer-info {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 50%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 25%;
+  }
+}
+
+.footer-logo {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.footer-logo-half {
+  color: $special-text-color;
+}
+
+.footer-adress {
+  margin-top: 20px;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+}
+
+.footer-adress a {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+
+.footer-title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $special-text-color;
+}
+
+.footer-contacts-section {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 50%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 25%;
+  }
+}
+
+.footer-contacts {
+  display: flex;
+  align-items: center;
+  padding-left: 0px;
+  padding-right: 0px;
+
+  @media screen and (max-width: 1199px) {
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    justify-content: flex-start;
+  }
+}
+
+.footer-contacts .footer-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  width: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  fill: #ffffff;
+
+  transition-property: background-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0ms;
+
+  &:hover,
+  &:focus {
+    height: 44px;
+    width: 44px;
+    background-color: $accent-text-color;
+    border-radius: 50%;
+    fill: $special-text-color;
+  }
+}
+
+.footer-link-ikon {
+  height: 20px;
+  width: 20px;
+}
+
+.footer-subscribe {
+  @media screen and (width: 1200px) {
+    width: 50%;
+  }
+}
+
+.footer-subscribe-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width: 1199px) {
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+    align-content: center;
+  }
+}
+
+.footer-input {
+  height: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
+
+  font-size: 16px;
+  line-height: 20px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  border-radius: 4px;
+  background-color: #2f303a;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0ms;
+}
+
+.footer-input:focus {
+  border: 1px solid #2196f3;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0ms;
+}
+
+.footer-button-text {
+  font-size: 16px;
+  line-height: 1.875;
+  margin-right: 10px;
+  letter-spacing: 0.06em;
+  color: $special-text-color;
+}
+
+.footer-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 29px;
+  padding-right: 29px;
+  border: none;
+
+  @media screen and (max-width: 1199px) {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
+    margin-top: 0;
+  }
+
+  background-color: $accent-text-color;
+}
