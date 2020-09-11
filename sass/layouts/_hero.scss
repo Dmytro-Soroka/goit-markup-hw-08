@@ -27,7 +27,7 @@
   screen and (-o-min-device-pixel-ratio: 2/1),
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
-  .box {
+  .hero {
     background-image: url(../images/index-images/header-img@2x.jpg);
   }
 }
