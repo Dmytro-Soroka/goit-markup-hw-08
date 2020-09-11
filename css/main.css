@@ -422,7 +422,7 @@ ul {
 }
 
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
-  .box {
+  .hero .hero {
     background-image: url(../images/index-images/header-img@2x.jpg);
   }
 }
@@ -433,6 +433,7 @@ ul {
 
 .hero-title {
   margin-top: 0px;
+  max-width: 100%;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.364;
