@@ -409,20 +409,15 @@ ul {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   height: 91px;
   margin-top: 0px;
   margin-bottom: 0px;
   padding-left: 0px;
-}
-
-@media (min-width: 1200px) {
-  .portfolio-buttons {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
 }
 
 .portfolio-buttons .portfolio-buttons-item:not(:last-child) {

@@ -7,16 +7,13 @@
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
+  justify-content: center;
   flex-wrap: wrap;
 
   height: 91px;
   margin-top: 0px;
   margin-bottom: 0px;
   padding-left: 0px;
-
-  @include for-size(desktop) {
-    justify-content: center;
-  }
 }
 
 .portfolio-buttons .portfolio-buttons-item:not(:last-child) {
