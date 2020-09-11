@@ -103,13 +103,18 @@
 }
 
 .site-nav {
-  display: block;
+  display: flex;
   margin-top: 0;
   margin-bottom: 0;
 
   @media screen and (max-width: 767px) {
+    display: block;
+    width: 99px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 60px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -147,10 +152,18 @@
 
 .item {
   display: flex;
-  position: relative;
-  height: 76px;
-
   justify-content: center;
+  align-items: center;
+  position: relative;
+
+  @media screen and (min-width: 768px) {
+    height: 76px;
+  }
+
+  @media screen and (max-width: 767px) {
+    height: 33px;
+    margin-bottom: 40px;
+  }
 }
 
 .site-nav .current::after {
@@ -179,9 +192,7 @@
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    flex-wrap: wrap;
-    display: flex;
-    align-items: center;
+    display: block;
   }
 
   @media screen and (min-width: 1200px) {
@@ -197,6 +208,14 @@
 
   @media screen and (max-width: 1199px) {
     margin-right: 0;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 16px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 10px;
   }
 }
 
